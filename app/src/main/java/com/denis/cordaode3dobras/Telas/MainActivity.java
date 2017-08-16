@@ -1,17 +1,21 @@
-package com.denis.cordaode3dobras;
+package com.denis.cordaode3dobras.Telas;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.view.View;
 import android.support.design.widget.NavigationView;
+import android.support.design.widget.Snackbar;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Toast;
+
+import com.denis.cordaode3dobras.R;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -83,11 +87,14 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.nav_camera) {
             // Handle the camera action
         } else if (id == R.id.nav_gallery) {
-
+            Toast.makeText(getApplicationContext(),"Teste1",Toast.LENGTH_SHORT).show();
+            Log.d("cordao","nav_gallery");
         } else if (id == R.id.nav_slideshow) {
-
+            Toast.makeText(getApplicationContext(),"Teste2",Toast.LENGTH_SHORT).show();
+            Log.d("cordao","nav_slideshow");
         } else if (id == R.id.nav_manage) {
-
+            Toast.makeText(getApplicationContext(),"Teste3",Toast.LENGTH_SHORT).show();
+            Log.d("cordao","nav_manage");
         } else if (id == R.id.nav_share) {
 
         } else if (id == R.id.nav_send) {
